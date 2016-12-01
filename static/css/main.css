@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #fcfff5;
+}
+
+a:hover {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+main a {
+    color: #a4c6d5;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #fcfff5;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 0px;
+}
+
+main {
+    flex: 1;
+    font: 20px sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+                                rgba(0,0,0,0.5)),
+                                url('../img/nyc.jpg');
+    background-size: 100%;
+}
+
+header {
+    background-color: #2ecc71;
+}
+
+main {
+    background-color: #ecf0f1;
+}
+
+footer {
+    color: white;
+    height: 40px;
+    color: #fcfff5;
+    background-color: #3e606f;
+    text-align: left;
+    font: 13px sans-serif;
+    padding: 10px 50px;
+}
+
+footer .footer-left,
+footer .footer-right {
+    display: inline-block;
+    vertical-align: center;
+}
+
+footer .footer-left {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+footer .footer-right {
+    box-sizing: border-box;
+    width: 49%;
+    text-align: right;
+}
+
+footer .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #193441;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #fcfff5;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+footer .footer-icons a:hover {
+    background-color: #cce7f4;
+    color: #193441;
+}
+
+.content-left {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 10%;
+}
+
+.content-right {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    float: left;
+    padding-left: 10%;
+    line-height: 35px;
+}
+
+.content-left span,
+.content-right span {
+    display: inline-block;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content-right span {
+    border-left: solid 2px rgba(252, 255, 245, 0.7);
+    padding-left: 30px;
+    margin-left: -15%;
+}
