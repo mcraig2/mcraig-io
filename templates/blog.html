@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+
+        .content-left .blog {
+            color: red;
+        }
+
+        .content-right .blog {
+            color: green;
+        }
+    </style>
+{% endblock %}
+
+{% block content_header %}
+    {{ super() }}
+{% endblock %}
+
+{% block content_body %}
+    {{ super() }}
+
+    <div class="blog-list">
+        <span>
+            <p>This is my blog.</p>
+        </span>
+    </div>
+
+    <div class="blog-descriptions">
+        {% for name in names %}
+            <span>
+                <a href="blog/{{ name.lower().replace(' ', '-') }}">
+                    {{ name }}
+                </a>
+            </span>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block content_footer %}
+    {{ super() }}
+{% endblock %}
